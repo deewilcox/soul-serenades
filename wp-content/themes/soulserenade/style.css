@@ -6800,13 +6800,14 @@ input, textarea {
   font-size: 80px;
 }
 #site-title a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  width: 100%;
+  	color: #fff;
+	text-decoration: none;
+  	display: block;
+	width: 100%;
+	font-family: 'Lovers Quarrel', cursive;
 }
 .basic #site-title a {
-  font-family: 'Megrim', cursive;
+  font-family: 'Lovers Quarrel', cursive;
 }
 .only-on-home.no-fittext #site-title a {
   font-size: 120px;
