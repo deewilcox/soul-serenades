@@ -6795,6 +6795,7 @@ input, textarea {
 
 #site-title {
   margin: 0;
+  display:none!important;
 }
 .no-fittext #site-title {
   font-size: 80px;

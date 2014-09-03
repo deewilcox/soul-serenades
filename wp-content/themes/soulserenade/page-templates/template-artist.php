@@ -2,6 +2,7 @@
 /**
  Template Name: Artist Profile
  */
+ 
 get_header();
 
 $video = get_post_meta( $posts[0]->ID, 'video', true );
