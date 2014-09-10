@@ -6,7 +6,7 @@ function init_page_custom_fields() {
 
 add_action('init', 'init_page_custom_fields');
 
-add_theme_support( 'post-formats', array( 'artist' ) );
+add_theme_support( 'post-formats', array( 'gallery', 'image', 'video', 'audio', 'quote', 'link', 'status', 'aside' ) );
 
 /* Handle Artist custom post type */
 
@@ -21,7 +21,7 @@ function create_post_type() {
       ),
     'public' => true,
     'has_archive' => true,
-    'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail' ,'post_formats')
+    'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail')
     )
   );
 }
