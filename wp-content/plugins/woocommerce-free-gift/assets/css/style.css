@@ -1,0 +1,4 @@
+/* Frontend CSS styles can be overridden here */
+#wc_free_gift_select_gift .choose-gift-option {
+	font-weight: bold !important;
+}

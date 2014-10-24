@@ -1,0 +1,245 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Get One Free\n"
+"POT-Creation-Date: 2014-06-14 11:19+0100\n"
+"PO-Revision-Date: 2014-06-14 11:20+0100\n"
+"Last-Translator: \n"
+"Language-Team: Rene Puchinger\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: c:\\develop\\www\\wp-content\\plugins\\woocommerce-"
+"free-gift\n"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:35
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:183
+msgid "Free Gift"
+msgstr "Free Gift"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:110
+msgid "Settings"
+msgstr "Settings"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:183
+msgid "The following options are specific to the Free Gift extension."
+msgstr "The following options are specific to the Free Gift extension."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:186
+msgid "Free Gift globally enabled"
+msgstr "Free Gift globally enabled"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:191
+msgid "Free Gift is globally enabled."
+msgstr "Free Gift is globally enabled."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:195
+msgid "Allow free gifts only to logged in users"
+msgstr "Allow free gifts only to logged in users"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:200
+msgid "Allow free gifts only to users which are registered and logged in."
+msgstr "Allow free gifts only to users which are registered and logged in."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:204
+msgid "Allow each user to get the free gift ONLY once"
+msgstr "Allow each user to get the free gift ONLY once"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:212
+#, php-format
+msgid "Minimal cart subtotal (%s)"
+msgstr "Minimal cart subtotal (%s)"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:213
+#, php-format
+msgid ""
+"Enter a minimal Cart Subtotal in %s so that the customer is eligible for a "
+"free gift."
+msgstr ""
+"Enter a minimal Cart Subtotal in %s so that the customer is eligible for a "
+"free gift."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:226
+msgid "Method of offering gifts"
+msgstr "Method of offering gifts"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:228
+msgid "Reward customers a fixed gift or let them choose from a category"
+msgstr "Reward customers a fixed gift or let them choose from a category"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:238
+msgid "Let customers choose not to receive a gift"
+msgstr "Let customers choose not to receive a gift"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:240
+msgid ""
+"If method of offering gifts (see above) is \"Fixed gift\", do you want to "
+"let customers choose not to receive the free gift?"
+msgstr ""
+"If method of offering gifts (see above) is \"Fixed gift\", do you want to "
+"let customers choose not to receive the free gift?"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:248
+msgid "The free gift product"
+msgstr "The free gift product"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:250
+msgid ""
+"Select the product which will be given to customers as a free gift after "
+"they make a purchase for at least the minimal amount."
+msgstr ""
+"Select the product which will be given to customers as a free gift after "
+"they make a purchase for at least the minimal amount."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:260
+msgid "The free gift category"
+msgstr "The free gift category"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:262
+msgid "Specify the category from which customers can select gifts"
+msgstr "Specify the category from which customers can select gifts"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:272
+msgid "Quantity of the free gift"
+msgstr "Quantity of the free gift"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:273
+msgid ""
+"Enter the number of free gifts that the customer will receive if he has met "
+"the eligibility condition (i.e. sufficient subtotal). Important: If you set "
+"this value higher than 1 and you use stock management for the gift products, "
+"you need to adjust the \"Out of Stock Threshold\" on WooCommerce Settings "
+"page."
+msgstr ""
+"Enter the number of free gifts that the customer will receive if he has met "
+"the eligibility condition (i.e. sufficient subtotal). Important: If you set "
+"this value higher than 1 and you use stock management for the gift products, "
+"you need to adjust the \"Out of Stock Threshold\" on WooCommerce Settings "
+"page."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:286
+msgid "Hide the gift product / category"
+msgstr "Hide the gift product / category"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:291
+msgid ""
+"If you want to hide the product or category you specified above from product "
+"search and product catalog, enable this option."
+msgstr ""
+"If you want to hide the product or category you specified above from product "
+"search and product catalog, enable this option."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:295
+msgid "If any coupon is applied, don't allow free gift to be added"
+msgstr "If any coupon is applied, don't allow free gift to be added"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:304
+msgid "Motivating message visible on the Cart page"
+msgstr "Motivating message visible on the Cart page"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:309
+msgid ""
+"Display a message on the Cart page motivating the customer to spend more "
+"money in order to get the free gift."
+msgstr ""
+"Display a message on the Cart page motivating the customer to spend more "
+"money in order to get the free gift."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:313
+msgid "The motivating message text"
+msgstr "The motivating message text"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:317
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:496
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:865
+msgid ""
+"By spending at least %PRICE%, you will be eligible for a free gift after "
+"checkout."
+msgstr ""
+"By spending at least %PRICE%, you will be eligible for a free gift after "
+"checkout."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:319
+msgid ""
+"Optionally use the placeholders %PRICE% and %PRODUCT% which will be "
+"automatically substituted by the actual minimal amount and the gift product, "
+"respectively. You can also use the shortcode [wc_free_gift_message] to show "
+"the proper message on any page including post and product pages."
+msgstr ""
+"Optionally use the placeholders %PRICE% and %PRODUCT% which will be "
+"automatically substituted by the actual minimal amount and the gift product, "
+"respectively. You can also use the shortcode [wc_free_gift_message] to show "
+"the proper message on any page including post and product pages."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:323
+msgid "\"Eligible for a free gift\" message visible on the Cart page"
+msgstr "\"Eligible for a free gift\" message visible on the Cart page"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:328
+msgid ""
+"Display a message on the Cart page after the customer is eligible for the "
+"free gift."
+msgstr ""
+"Display a message on the Cart page after the customer is eligible for the "
+"free gift."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:332
+msgid "The \"Eligible for a free gift\" message text"
+msgstr "The \"Eligible for a free gift\" message text"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:336
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:489
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:858
+msgid "You are eligible for a free gift after checkout."
+msgstr "You are eligible for a free gift after checkout."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:338
+msgid ""
+"Optionally use the placeholder %PRODUCT% which will be automatically "
+"substituted by the actual product name of the selected free gift. You can "
+"also use the shortcode [wc_free_gift_message] to show the proper message on "
+"any page including post and product pages."
+msgstr ""
+"Optionally use the placeholder %PRODUCT% which will be automatically "
+"substituted by the actual product name of the selected free gift. You can "
+"also use the shortcode [wc_free_gift_message] to show the proper message on "
+"any page including post and product pages."
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:342
+msgid "The CSS style for the \"Free\" indicator of the free gift"
+msgstr "The CSS style for the \"Free\" indicator of the free gift"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:515
+msgid "Currently customers can choose one from the following products: "
+msgstr "Currently customers can choose one from the following products: "
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:516
+msgid ", "
+msgstr ", "
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:585
+msgid "or"
+msgstr "or"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:614
+msgid "Choose your free gift"
+msgstr "Choose your free gift"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:624
+msgid "I don't want any gift"
+msgstr "I don't want any gift"
+
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:709
+#: c:\develop\www\wp-content\plugins\woocommerce-free-gift/woocommerce-free-gift.php:813
+msgid "Free!"
+msgstr "Free!"
+
+#~ msgid ""
+#~ "By spending at least %PRICE%, you will be eligible a free gift after "
+#~ "checkout."
+#~ msgstr ""
+#~ "By spending at least %PRICE%, you will be eligible a free gift after "
+#~ "checkout."
