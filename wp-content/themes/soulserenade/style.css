@@ -6747,6 +6747,12 @@ input, textarea {
   position: absolute;
   z-index: 0;
   left: -9999px;
+  padding-top:30px;
+}
+
+.title-card img{
+  padding-top:30px;
+  padding-bottom:15px;
 }
 
 #site-meta {
@@ -6863,6 +6869,11 @@ input, textarea {
     opacity: 1;
   }
 }
+
+.title-card #site-description{
+	display:none;
+}
+
 #site-description {
   margin: 0;
   font-size: 18px;
