@@ -4,7 +4,7 @@ Plugin Name: WooCommerce Free Gift
 Plugin URI: http://codecanyon.net/item/woocommerce-free-gift/6144902
 Description: Allows for rewarding customers a free gift when they spend at least a specified amount of money on purchase.
 Author: Rene Puchinger
-Version: 1.4
+Version: 1.5
 Author URI: http://codecanyon.net/user/renp
 
 Copyright (C) 2013 - 2014 Rene Puchinger
@@ -106,10 +106,20 @@ if ( !class_exists( 'WooCommerce_Free_Gift' ) ) {
 		 */
 		public function action_links( $links ) {
 
-			$plugin_links = array(
-				'<a href="' . admin_url( 'admin.php?page=woocommerce&tab=wc_free_gift' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>',
-			);
+			$settings_slug = 'woocommerce';
+		
+			if ( version_compare( WOOCOMMERCE_VERSION, "2.1.0" ) >= 0 ) {
+				
+				$settings_slug = 'wc-settings';			
+				
+			}
 
+			$plugin_links = array(
+			
+				'<a href="' . admin_url( 'admin.php?page=' . $settings_slug . '&tab=wc_free_gift' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>',
+				
+			);
+	
 			return array_merge( $plugin_links, $links );
 		}
 
@@ -118,12 +128,22 @@ if ( !class_exists( 'WooCommerce_Free_Gift' ) ) {
 		 * @return void
 		 */
 		public function add_tab() {
+		
+			$settings_slug = 'woocommerce';
+		
+			if ( version_compare( WOOCOMMERCE_VERSION, "2.1.0" ) >= 0 ) {
+				
+				$settings_slug = 'wc-settings';			
+				
+			}
+
 			foreach ( $this->settings_tabs as $name => $label ) {
 				$class = 'nav-tab';
 				if ( $this->current_tab == $name )
 					$class .= ' nav-tab-active';
-				echo '<a href="' . admin_url( 'admin.php?page=woocommerce&tab=' . $name ) . '" class="' . $class . '">' . $label . '</a>';
+				echo '<a href="' . admin_url( 'admin.php?page=' . $settings_slug . '&tab=' . $name ) . '" class="' . $class . '">' . $label . '</a>';
 			}
+			
 		}
 
 		/**

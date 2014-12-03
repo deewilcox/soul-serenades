@@ -1,0 +1,877 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Distance Rate Shipping v4.2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-11-03 14:00:47+0000\n"
+"Last-Translator: sk04ncld8g <plugins@wpshowcase.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: classes/collection-shipping-rate.php:11
+#@ woocommerce_distance_rate_shipping
+msgid "Takeout/Collection"
+msgstr ""
+
+#: classes/collection-shipping-rate.php:16
+#@ woocommerce_distance_rate_shipping
+msgid "Distance Rate Takeout/Collection"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:173
+#@ woocommerce_distance_rate_shipping
+msgid "Distance Rate Delivery"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:552
+#@ woocommerce_distance_rate_shipping
+msgid "Base Store"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:593
+#: classes/distance-rate-shipping.php:707
+#@ woocommerce_distance_rate_shipping
+msgid "mile(s)"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:594
+#: classes/distance-rate-shipping.php:706
+#@ woocommerce_distance_rate_shipping
+msgid "km"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:625
+#@ woocommerce_distance_rate_shipping
+msgid "This is how google positions you from your address.<br>Please enter your address in full so that directions to your store can be found easily."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:628
+#@ woocommerce_distance_rate_shipping
+msgid "Remove this rate?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:630
+#@ woocommerce_distance_rate_shipping
+msgid " no conditions"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:632
+#@ woocommerce_distance_rate_shipping
+msgid "Please enter a numeric value for this field."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:634
+#@ woocommerce_distance_rate_shipping
+msgid "The value of this field should be less than the maximum!"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:636
+#@ woocommerce_distance_rate_shipping
+msgid "You have errors in your input. Please make corrections above."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:638
+#: classes/distance-rate-shipping.php:999
+#: classes/distance-rate-shipping.php:1002
+#@ woocommerce_distance_rate_shipping
+msgid " and "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:639
+#: classes/distance-rate-shipping.php:1002
+#@ woocommerce_distance_rate_shipping
+msgid " is between "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:641
+#: classes/distance-rate-shipping.php:1005
+#@ woocommerce_distance_rate_shipping
+msgid " is above "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:643
+#: classes/distance-rate-shipping.php:1007
+#@ woocommerce_distance_rate_shipping
+msgid " is below "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:645
+#: classes/distance-rate-shipping.php:1260
+#@ woocommerce_distance_rate_shipping
+msgid " then charge "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:647
+#: classes/distance-rate-shipping.php:1017
+#@ woocommerce_distance_rate_shipping
+msgid " plus "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:649
+#: classes/distance-rate-shipping.php:1018
+#@ woocommerce_distance_rate_shipping
+msgid " per "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:650
+#: classes/distance-rate-shipping.php:982
+#: classes/distance-rate-shipping.php:1020
+#@ woocommerce_distance_rate_shipping
+msgid " starting from "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:652
+#: classes/distance-rate-shipping.php:1291
+#@ woocommerce_distance_rate_shipping
+msgid " for shipping."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:654
+#: classes/distance-rate-shipping.php:1249
+#: classes/distance-rate-shipping.php:1275
+#: classes/distance-rate-shipping.php:1276
+#: classes/distance-rate-shipping.php:1330
+#: classes/distance-rate-shipping.php:1332
+#@ woocommerce_distance_rate_shipping
+msgid "kg"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:655
+#@ woocommerce_distance_rate_shipping
+msgid "cubic "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:657
+#: classes/distance-rate-shipping.php:1239
+#@ woocommerce_distance_rate_shipping
+msgid "If "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:682
+#: classes/distance-rate-shipping.php:684
+#@ woocommerce_distance_rate_shipping
+msgid "Enable"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:687
+#@ woocommerce_distance_rate_shipping
+msgid "You should enable this shipping method if you would like customers to be able to use it."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:692
+#@ woocommerce_distance_rate_shipping
+msgid "Tax Status"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:696
+#@ woocommerce_distance_rate_shipping
+msgid "Taxable"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:697
+#@ woocommerce_distance_rate_shipping
+msgid "None"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:701
+#: classes/distance-rate-shipping.php:703
+#: classes/distance-rate-shipping.php:717
+#: classes/distance-rate-shipping.php:734
+#@ woocommerce_distance_rate_shipping
+msgid "Unit of Distance"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:709
+#@ woocommerce_distance_rate_shipping
+msgid "Choose whether you prefer to measure distances using km or miles."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:714
+#@ woocommerce_distance_rate_shipping
+msgid "How would you like to round distances?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:720
+#@ woocommerce_distance_rate_shipping
+msgid "Round up to nearest mile or km"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:722
+#@ woocommerce_distance_rate_shipping
+msgid "Round to nearest mile or km"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:724
+#@ woocommerce_distance_rate_shipping
+msgid "No rounding"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:726
+#@ woocommerce_distance_rate_shipping
+msgid "Choose whether you would you like to round distances. Rounding up to the nearest mile rounds 2.3 miles up to 3 miles. Rounding to the nearest mile rounds 2.3 miles to 2 miles."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:731
+#@ woocommerce_distance_rate_shipping
+msgid "What measure of distance would you like to use?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:737
+#@ woocommerce_distance_rate_shipping
+msgid "Point to point, straight line distance"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:739
+#@ woocommerce_distance_rate_shipping
+msgid "Road distance"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:741
+#@ woocommerce_distance_rate_shipping
+msgid "Choose road distance to use the distance by car or point-to-point distance to measure the distance between the customer and your store."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:746
+#@ woocommerce_distance_rate_shipping
+msgid "Title"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:748
+#@ woocommerce_distance_rate_shipping
+msgid "This controls the title which the user sees during checkout. You can use shortcodes [delivery_time], [store_title] and [store_address]."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:750
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery from [store_title], [store_address]"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:756
+#@ woocommerce_distance_rate_shipping
+msgid "Error message when no shipping method is available (with shortcode [to_your_country])"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:759
+#@ woocommerce_distance_rate_shipping
+msgid "This controls the message that the user sees when no shipping method is available (instead of \"Invalid Shipping Method\"). You can override other WooCommerce messages using the multilanguage mo/po files."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:761
+#@ woocommerce_distance_rate_shipping
+msgid "Sorry, it seems that there are no available shipping methods [to_your_country]. If you require assistance or wish to make alternate arrangements please contact us."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:766
+#: classes/distance-rate-shipping.php:768
+#@ woocommerce_distance_rate_shipping
+msgid "Show Route Map?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:771
+#@ woocommerce_distance_rate_shipping
+msgid "Uncheck this box to show the customer location on the map (instead of the route from the store to the customer)."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:788
+#: classes/store-post-type.php:102
+#@ woocommerce_distance_rate_shipping
+msgid "Address 1"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:790
+#@ woocommerce_distance_rate_shipping
+msgid "The first line of the address where items are shipped from."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:796
+#: classes/store-post-type.php:107
+#@ woocommerce_distance_rate_shipping
+msgid "Address 2"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:798
+#@ woocommerce_distance_rate_shipping
+msgid "The second line of the address where items are shipped from."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:804
+#@ woocommerce_distance_rate_shipping
+msgid "City"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:806
+#@ woocommerce_distance_rate_shipping
+msgid "The city where items are shipped from."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:812
+#@ woocommerce_distance_rate_shipping
+msgid "Zip/Post Code"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:814
+#@ woocommerce_distance_rate_shipping
+msgid "The zip/post code where items are shipped from."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:820
+#@ woocommerce_distance_rate_shipping
+msgid "County/State/Country"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:822
+#@ woocommerce_distance_rate_shipping
+msgid "The country where items are shipped from."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:852
+#@ woocommerce_distance_rate_shipping
+msgid "Please enter your address details so we can calculate your customer's shipping distance from you. (If you only have one store, then this is the only address you need to enter. If you deliver from more than one address, then you should add a store for each address you ship from)."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:871
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Rates"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:980
+#@ woocommerce_distance_rate_shipping
+msgid "per"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:984
+#@ woocommerce_distance_rate_shipping
+msgid "Minimum "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:986
+#@ woocommerce_distance_rate_shipping
+msgid "0 "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1042
+#@ woocommerce_distance_rate_shipping
+msgid "How to combine shipping rates?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1044
+#@ woocommerce_distance_rate_shipping
+msgid "When multiple Shipping Rates apply to an order, how would you like to combine the rates:"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1047
+#@ woocommerce_distance_rate_shipping
+msgid "Minimum - The cost is defined by the minimum rate that applies to the order."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1049
+#@ woocommerce_distance_rate_shipping
+msgid "Maximum - The cost is defined by the maximum rate that applies to the order."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1051
+#@ woocommerce_distance_rate_shipping
+msgid "Sum Over Rates  - The cost is the sum of each rate that applies to the order."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1053
+#@ woocommerce_distance_rate_shipping
+msgid "Sum Over Product Rows - The cost is the sum of the minimum cost of each product row."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1060
+#@ woocommerce_distance_rate_shipping
+msgid "Require every row in cart to satisfy rules?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1065
+#@ woocommerce_distance_rate_shipping
+msgid "Shipping Rates (i.e. Shipping Rules)"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1067
+#@ woocommerce_distance_rate_shipping
+msgid "Please enter your shipping rates:"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1078
+#@ woocommerce_distance_rate_shipping
+msgid "Add New Rate"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1129
+#@ woocommerce_distance_rate_shipping
+msgid "Remove Rate Below"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1131
+#@ woocommerce_distance_rate_shipping
+msgid "Rule "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1133
+#@ woocommerce_distance_rate_shipping
+msgid "Would you like this shipping rate to have its own name? If so, please choose a name. You can use shortcodes [delivery_time], [store_title] and [store_address]."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1141
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1149
+#@ woocommerce_distance_rate_shipping
+msgid "Apply costs/conditions for this rate to these product categories (leave none selected to apply to all product categories): "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1161
+#@ woocommerce_distance_rate_shipping
+msgid "Apply costs/conditions for this rate to these products (leave none selected to select apply rate to all products): "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1165
+#@ woocommerce_distance_rate_shipping
+msgid "Apply this rate to these countries (leave none selected to apply rule to customers in all countries): "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1190
+#: woocommerce-distance-rate-shipping.php:99
+#@ woocommerce_distance_rate_shipping
+msgid "Apply this rate to these states (leave none selected to apply rule to customers in all states): "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1195
+#@ woocommerce_distance_rate_shipping
+msgid "Apply this rate to these comma separated zipcodes (e.g. \"06513, 06514\") using wildcards (e.g. 0651* for 06510-06519): "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1199
+#@ woocommerce_distance_rate_shipping
+msgid "You can also select a delivery time (leave blank if you do not need the customer to select a delivery time)"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1202
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Time Starting From:"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1206
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Time Ending:"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1210
+#@ woocommerce_distance_rate_shipping
+msgid "You can also select delivery days (leave blank if you do not need the customer to select a delivery date)"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1213
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Day:"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1217
+#@ woocommerce_distance_rate_shipping
+msgid "Not important"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1218
+#@ woocommerce_distance_rate_shipping
+msgid "Sunday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1219
+#@ woocommerce_distance_rate_shipping
+msgid "Monday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1220
+#@ woocommerce_distance_rate_shipping
+msgid "Tuesday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1221
+#@ woocommerce_distance_rate_shipping
+msgid "Wednesday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1222
+#@ woocommerce_distance_rate_shipping
+msgid "Thursday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1223
+#@ woocommerce_distance_rate_shipping
+msgid "Friday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1224
+#@ woocommerce_distance_rate_shipping
+msgid "Saturday"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1227
+#@ woocommerce_distance_rate_shipping
+msgid "Do the products need to be on backorder?"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1234
+#@ woocommerce_distance_rate_shipping
+msgid "Apply this rate to products that are found by this query (e.g. post_type=product&author=1&posts_per_page=-1): "
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1241
+#: classes/distance-rate-shipping.php:1266
+#: classes/distance-rate-shipping.php:1319
+#: classes/distance-rate-shipping.php:1323
+#@ woocommerce_distance_rate_shipping
+msgid "Distance"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1244
+#: classes/distance-rate-shipping.php:1270
+#: classes/distance-rate-shipping.php:1311
+#: classes/distance-rate-shipping.php:1315
+#@ woocommerce_distance_rate_shipping
+msgid "Total"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1247
+#: classes/distance-rate-shipping.php:1273
+#: classes/distance-rate-shipping.php:1327
+#: classes/distance-rate-shipping.php:1331
+#@ woocommerce_distance_rate_shipping
+msgid "Weight"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1250
+#: classes/distance-rate-shipping.php:1277
+#: classes/distance-rate-shipping.php:1335
+#: classes/distance-rate-shipping.php:1339
+#@ woocommerce_distance_rate_shipping
+msgid "Volume"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1253
+#: classes/distance-rate-shipping.php:1281
+#: classes/distance-rate-shipping.php:1343
+#: classes/distance-rate-shipping.php:1348
+#@ woocommerce_distance_rate_shipping
+msgid "Dimensional Weight"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1255
+#: classes/distance-rate-shipping.php:1283
+#: classes/distance-rate-shipping.php:1285
+#: classes/distance-rate-shipping.php:1346
+#: classes/distance-rate-shipping.php:1350
+#@ woocommerce_distance_rate_shipping
+msgid "/kg"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1257
+#: classes/distance-rate-shipping.php:1287
+#: classes/distance-rate-shipping.php:1354
+#: classes/distance-rate-shipping.php:1358
+#@ woocommerce_distance_rate_shipping
+msgid "Quantity"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1259
+#: classes/distance-rate-shipping.php:1290
+#: classes/distance-rate-shipping.php:1357
+#@ woocommerce_distance_rate_shipping
+msgid "product(s)"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1289
+#: classes/distance-rate-shipping.php:1359
+#@ woocommerce_distance_rate_shipping
+msgid "product"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1295
+#@ woocommerce_distance_rate_shipping
+msgid "Variable"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1295
+#@ woocommerce_distance_rate_shipping
+msgid "Minimum"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1296
+#@ woocommerce_distance_rate_shipping
+msgid "Maximum"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1297
+#@ woocommerce_distance_rate_shipping
+msgid "Cost"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1298
+#@ woocommerce_distance_rate_shipping
+msgid "Calculate Cost starting from"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1301
+#@ woocommerce_distance_rate_shipping
+msgid "Fee"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1306
+#@ woocommerce_distance_rate_shipping
+msgid "(Flat fee when conditions fulfilled)"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1364
+#@ woocommerce_distance_rate_shipping
+msgid "Please select which stores you would like this rate to apply to (you should select at least one store):"
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1394
+#@ woocommerce_distance_rate_shipping
+msgid "This is a fantastic shipping method that allows you to set the rate of shipping dependent on a wide range of variables including distance."
+msgstr ""
+
+#: classes/distance-rate-shipping.php:1746
+#@ woocommerce_distance_rate_shipping
+msgid "Invalid shipping method."
+msgstr ""
+
+#: classes/special-delivery-shipping-rate.php:14
+#@ woocommerce_distance_rate_shipping
+msgid "Special Delivery"
+msgstr ""
+
+#: classes/special-delivery-shipping-rate.php:19
+#@ woocommerce_distance_rate_shipping
+msgid "Distance Rate Special delivery"
+msgstr ""
+
+#: classes/store-post-type.php:73
+#@ woocommerce_distance_rate_shipping
+msgid "Store Data"
+msgstr ""
+
+#: classes/store-post-type.php:93
+#@ woocommerce_distance_rate_shipping
+msgid "Store Address"
+msgstr ""
+
+#: classes/store-post-type.php:96
+#@ woocommerce_distance_rate_shipping
+msgid "Please fill out the store address and check that google positions it correctly on the map below."
+msgstr ""
+
+#: classes/store-post-type.php:99
+#: classes/store-post-type.php:133
+#@ woocommerce_distance_rate_shipping
+msgid "Label"
+msgstr ""
+
+#: classes/store-post-type.php:99
+#: classes/store-post-type.php:133
+#@ woocommerce_distance_rate_shipping
+msgid "Value"
+msgstr ""
+
+#: classes/store-post-type.php:105
+#@ woocommerce_distance_rate_shipping
+msgid "House Number/Street Address"
+msgstr ""
+
+#: classes/store-post-type.php:109
+#@ woocommerce_distance_rate_shipping
+msgid "Town"
+msgstr ""
+
+#: classes/store-post-type.php:111
+#@ woocommerce_distance_rate_shipping
+msgid "Address 3"
+msgstr ""
+
+#: classes/store-post-type.php:113
+#@ woocommerce_distance_rate_shipping
+msgid "Region/State"
+msgstr ""
+
+#: classes/store-post-type.php:115
+#@ woocommerce_distance_rate_shipping
+msgid "Address 4"
+msgstr ""
+
+#: classes/store-post-type.php:117
+#@ woocommerce_distance_rate_shipping
+msgid "Country"
+msgstr ""
+
+#: classes/store-post-type.php:123
+#@ woocommerce_distance_rate_shipping
+msgid "You can drag and drop the marker to position the store more precisely."
+msgstr ""
+
+#: classes/store-post-type.php:127
+#@ woocommerce_distance_rate_shipping
+msgid "Store Details"
+msgstr ""
+
+#: classes/store-post-type.php:130
+#@ woocommerce_distance_rate_shipping
+msgid "Please complete your store details. Please leave values blank if unavailable"
+msgstr ""
+
+#: classes/store-post-type.php:136
+#@ woocommerce_distance_rate_shipping
+msgid "E-mail"
+msgstr ""
+
+#: classes/store-post-type.php:138
+#@ woocommerce_distance_rate_shipping
+msgid "Email Address for Store"
+msgstr ""
+
+#: classes/store-post-type.php:151
+#: classes/store-post-type.php:153
+#@ woocommerce_distance_rate_shipping
+msgid "Stores"
+msgstr ""
+
+#: classes/store-post-type.php:152
+#@ woocommerce_distance_rate_shipping
+msgid "Store"
+msgstr ""
+
+#: classes/store-post-type.php:154
+#@ woocommerce_distance_rate_shipping
+msgid "Add Store"
+msgstr ""
+
+#: classes/store-post-type.php:155
+#@ woocommerce_distance_rate_shipping
+msgid "Add New Store"
+msgstr ""
+
+#: classes/store-post-type.php:156
+#@ woocommerce_distance_rate_shipping
+msgid "Edit"
+msgstr ""
+
+#: classes/store-post-type.php:157
+#@ woocommerce_distance_rate_shipping
+msgid "Edit Store"
+msgstr ""
+
+#: classes/store-post-type.php:158
+#@ woocommerce_distance_rate_shipping
+msgid "New Store"
+msgstr ""
+
+#: classes/store-post-type.php:159
+#: classes/store-post-type.php:160
+#@ woocommerce_distance_rate_shipping
+msgid "View Store"
+msgstr ""
+
+#: classes/store-post-type.php:161
+#@ woocommerce_distance_rate_shipping
+msgid "Search Stores"
+msgstr ""
+
+#: classes/store-post-type.php:162
+#@ woocommerce_distance_rate_shipping
+msgid "No Stores found"
+msgstr ""
+
+#: classes/store-post-type.php:163
+#@ woocommerce_distance_rate_shipping
+msgid "No Stores found in trash"
+msgstr ""
+
+#: classes/store-post-type.php:165
+#@ woocommerce_distance_rate_shipping
+msgid "Parent Store"
+msgstr ""
+
+#: classes/store-post-type.php:169
+#@ woocommerce_distance_rate_shipping
+msgid "This is where you can add/edit stores for your stores."
+msgstr ""
+
+#: classes/store-post-type.php:186
+#@ woocommerce_distance_rate_shipping
+msgid "Store Author"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:126
+#: woocommerce-distance-rate-shipping.php:139
+#@ woocommerce_distance_rate_shipping
+msgid "Reorder Shipping Methods"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:129
+#: woocommerce-distance-rate-shipping.php:142
+#@ woocommerce_distance_rate_shipping
+msgid "Special Delivery Settings"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:132
+#: woocommerce-distance-rate-shipping.php:145
+#@ woocommerce_distance_rate_shipping
+msgid "Collection Settings"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:135
+#: woocommerce-distance-rate-shipping.php:148
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Settings"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:289
+#@ woocommerce_distance_rate_shipping
+msgid "Select delivery time"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:365
+#@ woocommerce_distance_rate_shipping
+msgid "Street Address"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:400
+#@ woocommerce_distance_rate_shipping
+msgid "Please enter more details into your address so that we can calculate your shipping cost"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:430
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Time"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:432
+#@ woocommerce_distance_rate_shipping
+msgid "Delivery Date"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:434
+#@ woocommerce_distance_rate_shipping
+msgid "Please select a delivery time:"
+msgstr ""
+
+#: woocommerce-distance-rate-shipping.php:436
+#@ woocommerce_distance_rate_shipping
+msgid "Please select a delivery date:"
+msgstr ""
+

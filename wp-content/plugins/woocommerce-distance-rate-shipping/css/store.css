@@ -1,0 +1,67 @@
+/**
+* @copyright Copyright (c) 2014, WPShowCase.net
+*/
+.store-locator .address {
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+#store_excerpt .wp-editor-area 
+{
+    height: 200px; 
+    width: 100%;
+}
+
+#store_opening_hours .wp-editor-area,
+#store_features.wp-editor-area,
+#store_address .wp-editor-area
+#store_telephone .wp-editor-area,
+#store_email .wp-editor-area,
+#store_manager .wp-editor-area,
+#store_title .wp-editor-area
+{
+    width: 50%;
+}
+
+#store_opening_hours .wp-editor-area,
+#store_features.wp-editor-area,
+#store_address .wp-editor-area
+{
+    height:150px;
+}
+
+#store_telephone .wp-editor-area,
+#store_email .wp-editor-area,
+#store_manager .wp-editor-area,
+#store_title .wp-editor-area
+{
+    height:50px;
+}
+
+.store-locator-table {
+    width:100%;
+    border:0;
+}
+.store-locator-table td {
+    width:50%;
+    border:0;
+    vertical-align:top;
+}
+
+.map-canvas {
+    width:100%;
+    height:400px;
+}
+
+.store-details {
+    text-align:center;
+}
+
+#store-locator-store-data {
+    margin-top:20px;
+}
+
+#store-map {
+    width:100%;
+    height:300px;
+}

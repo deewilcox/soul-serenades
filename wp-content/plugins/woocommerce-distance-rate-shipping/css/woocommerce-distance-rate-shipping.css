@@ -1,0 +1,50 @@
+/**
+* @copyright Copyright (c) 2014, WPShowCase.net
+*/
+.right {
+	float:right;
+}
+
+.distance-row {
+	border:2px solid #aaa;
+	border-radius:6px;
+	padding:6px;
+	margin-bottom:10px;
+}
+
+#distance-shipping-rate input {
+	max-width:50px;
+}
+
+.distance-rate-error {
+	color: #f00;
+}
+
+#distance-rates .numeric {
+	width:70px;
+}
+
+#distance-rates table.form-table th {
+	padding-right:0px;
+}
+
+.row-container input {
+	max-width:50px;
+}
+
+.row-container select {
+	max-width:150px;
+}
+
+.remove-distance-rate {
+	float:right;
+}
+
+.add-distance-rate {
+	width:400px;
+	text-align:center;
+}
+
+.conditions-and-costs {
+	display:inline-block;
+}
