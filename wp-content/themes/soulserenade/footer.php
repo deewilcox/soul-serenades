@@ -15,7 +15,7 @@ $bavotasan_theme_options = bavotasan_theme_options();
 			<div class="row">
 				<div class="copyright col-lg-12">
 					<span class="pull-left"><?php printf( __( 'Copyright &copy; %s %s. All Rights Reserved.', 'arcade' ), date( 'Y' ), ' <a href="' . home_url() . '">' . get_bloginfo( 'name' ) .'</a>' ); ?></span>
-					<span class="credit-link pull-right"><?php printf( __( 'Design and Development by %s.', 'arcade' ), '<a href="https://github.com/deewilcox/soul-serenades" target="_blank" title="Dee Wilcox on Github">Dee Wilcox</a>' ); ?></span>
+					<span class="credit-link pull-right"><?php printf( __( 'Development by %s.', 'arcade' ), '<a href="https://github.com/deewilcox/soul-serenades" target="_blank" title="Dee Wilcox on Github">Dee Wilcox</a>' ); ?></span>
 				</div><!-- .col-lg-12 -->
 			</div><!-- .row -->
 		</div><!-- #footer-content.container -->
@@ -23,5 +23,9 @@ $bavotasan_theme_options = bavotasan_theme_options();
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+var div = document.getElementById("wc_free_gift_chosen_gift"); 
+div.innerHTML = '<h2>Select Your Free Gift</h2><p>Please select your free gift, or indicate that you do not want a free gift with this purchase.</p>' + div.innerHTML;
+</script>
 </body>
 </html>

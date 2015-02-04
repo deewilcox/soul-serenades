@@ -17,14 +17,32 @@ function create_post_type() {
     array(
       'labels' => array(
         'name' => __( 'Artists' ),
-        'singular_name' => __( 'Artist' )
+        'singular_name' => __( 'Artist' ),
+        'add_new' => __( 'Add New' ),
+        'add_new_item' => __( 'Add New Artist' ),
+        'edit' => __( 'Edit' ),
+        'edit_item' => __( 'Edit Artist' ),
+        'new_item' => __( 'New Artist' ),
+        'view' => __( 'View Artists' ),
+        'view_item' => __( 'View Artist' ),
+        'search_items' => __( 'Search Artists' ),
+        'not_found' => __( 'No artists found' ),
+        'not_found_in_trash' => __( 'No artists found in trash' )
       ),
-    'public' => true,
-    'has_archive' => true,
-    'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail')
+	  'description' => __( 'This is where you can add new Artists to your site.' ),
+      'public' => true,
+      'hierarchical' => false,
+      '_builtin' => false,
+      'capability_type' => 'post',
+      'has_archive' => true,
+/*       'rewrite' => true, */
+      'supports' => array( 'title', 'editor', 'comments', 'excerpt', 'custom-fields', 'thumbnail')
     )
   );
+  flush_rewrite_rules();
 }
+
+
 
 /*
 function init_artist_custom_fields() {

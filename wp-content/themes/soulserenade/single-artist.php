@@ -17,6 +17,7 @@ get_header(); ?>
 				while ( have_posts() ) : the_post(); 
 					$video = get_post_meta( $posts[0]->ID, 'video', true );
 					$playlist = get_post_meta( $posts[0]->ID, 'playlist', true );
+					$mileage = get_post_meta( $posts[0]->ID, 'mileage', true );
 					
 					if ( has_post_thumbnail() ) {
 						$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
@@ -38,12 +39,16 @@ HTML;
 						<?php echo $featuredImageHTML; ?>
 						<div class="entry-content description clearfix">
 					    	<?php the_content( __( 'Read more', 'arcade') ); ?>
+					    	<br>
+					    	<button onclick="http://ec2-54-172-101-34.compute-1.amazonaws.com/soulserenades/packages/">Choose a Package</button>
 						</div><!-- .entry-content -->
 						<h1>View Artist Performance</h1>
 						<?php echo $video; ?>
 						<br />
 						<h1>Artist Playlist</h1>
 						<?php echo $playlist; ?>
+						<hr style="border-top:1px solid #ccc;">
+						<p style="font-style:italic;"><?php echo $mileage; ?></p>
 						<?php get_template_part( 'content', 'footer' ); ?>
 					</article><!-- #post-<?php the_ID(); ?> -->
 
@@ -53,7 +58,7 @@ HTML;
 						<div class="next pull-right"><?php next_post_link( '%link', __( '%title &rarr;', 'arcade' ) ); ?></div>
 					</div><!-- #posts-pagination -->
 
-					<?php // comments_template( '', true ); ?>
+					<?php comments_template( '/comments-artist.php', true ); ?>
 
 				<?php endwhile; // end of the loop. ?>
 			</div>

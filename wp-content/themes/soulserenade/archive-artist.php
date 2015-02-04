@@ -39,14 +39,6 @@ get_header(); ?>
 								<?php _e( 'Artists', 'arcade' ); ?>
 							<?php endif; ?>
 						</h1><!-- .page-title -->
-						<?php
-						$description = term_description();
-						if ( is_author() )
-							$description = get_the_author_meta( 'description' );
-
-		                if ( $description )
-							printf( '<h2 class="archive-meta">%s</h2>', $description );
-						?>
 					</header><!-- #archive-header -->
 
 					<?php
@@ -65,7 +57,8 @@ get_header(); ?>
 					get_template_part( 'content', 'none' );
 				endif;
 				?>
-
+				<h3>Interested in Becoming a Soul Serenades Artist?</h3>
+				Please <a href="http://ec2-54-172-101-34.compute-1.amazonaws.com/soulserenades/wp-content/uploads/2015/01/SS-ArtistBrochure.pdf">view our artist brochure</a> to learn more. 
 			</section><!-- #primary.c8 -->
 			<?php get_sidebar(); ?>
 		</div>

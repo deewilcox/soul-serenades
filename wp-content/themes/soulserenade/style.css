@@ -218,6 +218,8 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  background: none!important;
+  padding:5px;
 }
 
 @media print {
@@ -311,7 +313,7 @@ table {
 
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    border: 0px solid #ddd !important;
   }
 }
 *,
@@ -1822,7 +1824,7 @@ th {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 0px solid #dddddd;
 }
 
 .table > thead > tr > th {
@@ -1866,7 +1868,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 0px solid #dddddd;
 }
 
 .table-bordered > thead > tr > th,
@@ -1982,7 +1984,7 @@ table th[class*="col-"] {
     margin-bottom: 15px;
     overflow-x: scroll;
     overflow-y: hidden;
-    border: 1px solid #dddddd;
+    border: 0px solid #dddddd;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
   }
@@ -4657,7 +4659,7 @@ textarea.input-group-sm > .input-group-btn > .comment-reply-link,
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #ffffff;
+  /* color: #ffffff; */
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -6691,7 +6693,7 @@ table {
 }
 table td, table th {
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   text-align: left;
 }
 table th {
@@ -8256,4 +8258,13 @@ a img.aligncenter {
 	max-width: 450px;
 	width:34%;
 	padding-right:20px;
+}
+
+/* Woocommerce specific styles */
+ul.tabs{
+	margin-bottom: 0!important;
+}
+
+div.woocommerce-tabs div.panel.entry-content {
+	padding: 10px!important;
 }
