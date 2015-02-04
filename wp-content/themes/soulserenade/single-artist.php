@@ -40,7 +40,7 @@ HTML;
 						<div class="entry-content description clearfix">
 					    	<?php the_content( __( 'Read more', 'arcade') ); ?>
 					    	<br>
-					    	<button onclick="http://ec2-54-172-101-34.compute-1.amazonaws.com/soulserenades/packages/">Choose a Package</button>
+					    	<p><a href="http://ec2-52-0-10-249.compute-1.amazonaws.com/soulserenades/serenade-packages/" target="_blank">Choose a Package</a></p>
 						</div><!-- .entry-content -->
 						<h1>View Artist Performance</h1>
 						<?php echo $video; ?>
