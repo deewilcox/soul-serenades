@@ -96,5 +96,158 @@ function custom_header_images() {
 	}
 }
 
+/* Woocommerce Custom Order Fields */
 
+function custom_filter_checkout_fields($fields){
+    $fields['extra_fields'] = array(
+            'recipient_name' => array(
+                'type' => 'text',
+                'required'      => true,
+                'label' => __( 'Name of Serenade Recipient' )
+                ),
+            'recipient_phone' => array(
+                'type' => 'text',
+                'required'      => true,
+                'label' => __( 'Phone Number of Serenade Recipient' )
+                ),    
+            'venue_address' => array(
+                'type' => 'text',
+                'required'      => true,
+                'label' => __( 'Address of Venue' )
+                ),
+            'venue_type' => array(
+                'type' => 'text',
+                'required'      => true,
+                'label' => __( 'Type of Venue' )
+                ),
+            'arrival_time' => array(
+                'type' => 'text',
+                'required'      => true,
+                'label' => __( 'Range of Time Artist Should Arrive' )
+                ),          
+		// 'venue' => array(
+   //             'type' => 'select',
+     //           'options' => array( 'a' => __( 'apple' ), 'b' => __( 'bacon' ), 'c' => __( 'chocolate' ) ),
+       //         'required'      => true,
+         //       'label' => __( 'Another field' )
+           //     ),
+			'policies' => array(
+				'type' => 'checkbox',
+				'required' => true,
+				'label' => __( 'I have read and agree to the <a href="/soulserenades/policies/">Policies and Terms of Use</a>.' )
+				)
+            );
+
+    return $fields;
+}
+
+
+add_filter( 'woocommerce_checkout_fields', 'custom_filter_checkout_fields' );
+
+function custom_extra_checkout_fields(){ 
+
+    $checkout = WC()->checkout(); ?>
+
+    <div class="extra-fields">
+    <h3><?php _e( 'Required Information' ); ?></h3>
+
+    <?php 
+    // because of this foreach, everything added to the array in the previous function will display automagically
+    foreach ( $checkout->checkout_fields['extra_fields'] as $key => $field ) : ?>
+
+        <?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+
+        <?php endforeach; ?>
+    <?php echo '</div>' ;
+}
+
+add_action( 'woocommerce_checkout_after_customer_details' ,'custom_extra_checkout_fields' );
+
+// save the extra field when checkout is processed
+function custom_save_extra_checkout_fields( $order_id, $posted ){
+    // sanitize text fields
+    $customTextFields = array('recipient_name','recipient_phone','venue_address','venue_type','arrival_time');
+    foreach ($customTextFields as $field){
+	    if( isset( $posted[$field] ) ) {
+	        update_post_meta( $order_id, '_' . $field, sanitize_text_field( $posted[$field] ) );
+	    }
+    }
+    // sanitize select box field
+    if( isset( $posted['venue'] ) && in_array( $posted['venue'], array( 'a', 'b', 'c' ) ) ) {
+        update_post_meta( $order_id, '_venue', $posted['venue'] );
+    }
+    // post checkbox field
+    if( isset( $posted['policies'] ) && in_array( $posted['policies'], array( 'a', 'b', 'c' ) ) ) {
+        update_post_meta( $order_id, '_policies', $posted['policies'] );
+    }
+}
+add_action( 'woocommerce_checkout_update_order_meta', 'custom_save_extra_checkout_fields', 10, 2 );
+
+// display the extra data on order recieved page and my-account order review
+function custom_display_order_data( $order_id ){  
+	$customTextFields = array(
+    		array('fieldname' => 'recipient_name', 'label' => 'Recipient Name'),
+    		array('fieldname' => 'recipient_phone', 'label' => 'Recipient Phone'),
+    		array('fieldname' => 'venue_address', 'label' => 'Venue Address'),
+    		array('fieldname' => 'venue_type', 'label' => 'Venue Type'),
+    		array('fieldname' => 'arrival_time', 'label' => 'Arrival Time'),
+    		array('fieldname' => 'policies', 'label' => 'Policies')
+		); 
 ?>
+    <h2><?php _e( 'Additional Info' ); ?></h2>
+    <table class="shop_table shop_table_responsive additional_info">
+        <tbody>
+        <?php foreach ($customTextFields as $field): ?>
+            <tr>
+                <th><?php _e( $field['label'] . ':' ); ?></th>
+                <td><?php echo get_post_meta( $order_id, '_' . $field['fieldname'], true ); ?></td>
+            </tr>
+        <?php endforeach; ?>    
+        </tbody>
+    </table>
+<?php }
+add_action( 'woocommerce_thankyou', 'custom_display_order_data', 20 );
+add_action( 'woocommerce_view_order', 'custom_display_order_data', 20 );
+
+
+// display the extra data in the order admin panel
+function custom_display_order_data_in_admin( $order ){  ?>
+    <div class="order_data_column">
+        <h4><?php _e( 'Extra Details', 'woocommerce' ); ?></h4>
+<?php 
+ 		$customTextFields = array(
+    		array('fieldname' => 'recipient_name', 'label' => 'Recipient Name'),
+    		array('fieldname' => 'recipient_phone', 'label' => 'Recipient Phone'),
+    		array('fieldname' => 'venue_address', 'label' => 'Venue Address'),
+    		array('fieldname' => 'venue_type', 'label' => 'Venue Type'),
+    		array('fieldname' => 'arrival_time', 'label' => 'Arrival Time'),
+    		array('fieldname' => 'policies', 'label' => 'Policies')
+		); 
+		foreach ($customTextFields as $field): 
+            echo '<p><strong>' . __( $field['label'] ) . ':</strong>' . get_post_meta( $order->id, '_' . $field['fieldname'], true ) . '</p>';
+        endforeach; 
+?>
+    </div>
+<?php }
+add_action( 'woocommerce_admin_order_data_after_order_details', 'custom_display_order_data_in_admin' , 20, 1 );
+
+// add order info to email
+function custom_email_order_meta_fields( $fields, $sent_to_admin, $order ) {
+	$customTextFields = array(
+    		array('fieldname' => 'recipient_name', 'label' => 'Recipient Name'),
+    		array('fieldname' => 'recipient_phone', 'label' => 'Recipient Phone'),
+    		array('fieldname' => 'venue_address', 'label' => 'Venue Address'),
+    		array('fieldname' => 'venue_type', 'label' => 'Venue Type'),
+    		array('fieldname' => 'arrival_time', 'label' => 'Arrival Time'),
+    		array('fieldname' => 'policies', 'label' => 'Policies')
+		); 
+        foreach ($customTextFields as $field):
+    		$fields[$field['fieldname']] = array(
+                'label' => __( $field['label'] ),
+                'value' => get_post_meta( $order->id, '_' . $field['fieldname'], true ),
+            );
+	    endforeach;
+    return $fields;
+}
+add_filter('woocommerce_email_order_meta_fields', 'custom_email_order_meta_keys', 10, 3 );
+
