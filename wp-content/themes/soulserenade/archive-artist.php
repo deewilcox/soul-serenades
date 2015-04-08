@@ -58,7 +58,7 @@ get_header(); ?>
 				endif;
 				?>
 				<h3>Interested in Becoming a Soul Serenades Artist?</h3>
-				Please <a href="http://ec2-54-172-101-34.compute-1.amazonaws.com/soulserenades/wp-content/uploads/2015/01/SS-ArtistBrochure.pdf">view our artist brochure</a> to learn more. 
+				Please <a href="http://ec2-52-0-10-249.compute-1.amazonaws.com/soulserenades/wp-content/uploads/2015/02/Artist-Brochure.pdf">view our artist brochure</a> to learn more. 
 			</section><!-- #primary.c8 -->
 			<?php get_sidebar(); ?>
 		</div>

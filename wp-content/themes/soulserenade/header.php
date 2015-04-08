@@ -49,6 +49,15 @@ $space_class = '';
 					$menu_class = ( is_rtl() ) ? ' navbar-right' : '';
 					wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav navbar-nav' . $menu_class, 'fallback_cb' => 'bavotasan_default_menu', 'depth' => 2 ) );
 					?>
+					<!-- Social Icons -->
+					<div id="social-icon-bar" style="float:right; padding-top:12px; width:200px;">
+						<a href="https://www.facebook.com/SoulSerenadesTN" title="Facebook" target="_blank"><img src="/images/Facebook.png" style="float:left;height:25px;padding-right:3px;border:none!important;" alt="Facebook"></a>
+						<a href="https://twitter.com/SoulSerenadesTN" title="Twitter" target="_blank"><img src="/images/Twitter.png" style="float:left;height:25px;padding-right:3px;border:none!important;" alt="Twitter"></a>
+						<a href="https://instagram.com/soulserenadestn/" title="Instagram" target="_blank"><img src="/images/Instagram.png" style="float:left;height:25px;padding-right:3px;border:none!important;" alt="Instagram"></a>
+						<a href="https://www.pinterest.com/SoulSerenadesTN/" title="Pinterest" target="_blank"><img src="/images/Pinterest.png" style="float:left;height:25px;padding-right:3px;border:none!important;" alt="Pinterest"></a>
+						<a href="https://plus.google.com/u/0/107838615997922935370/about" title="Google Plus" target="_blank"><img src="/images/GooglePlus.png" style="float:left;height:25px;padding-right:3px;border:none!important;" alt="Google Plus"></a>
+						<a href="https://www.youtube.com/channel/UCashgBEhyC-dZCv2gfti9_A/about" title="YouTube" target="_blank"><img src="/images/YouTube.png" style="float:left;height:25px;padding-right:3px;border:none!important;" alt="YouTube"></a>
+					</div>
 				</div>
 			</nav><!-- #site-navigation -->
 
@@ -58,7 +67,7 @@ $space_class = '';
     					<h1 id="site-title" style="display:none!important;">
     						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
     					</h1>
-    					<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( home_url() ); ?>/images/logo2.png" alt="Soul Serenades"></a>
+    					<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url( home_url() ); ?>/images/logo3.png" alt="Soul Serenades"></a>
 
     					<?php if ( $bavotasan_theme_options['header_icon'] ) { ?>
     					<i class="fa <?php echo $bavotasan_theme_options['header_icon']; ?>"></i>

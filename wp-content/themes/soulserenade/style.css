@@ -8273,7 +8273,15 @@ div.related.products{
 	clear:both;
 }
 
-
 .woocommerce .related ul li.product, .woocommerce .related ul.products li.product, .woocommerce .upsells.products ul li.product, .woocommerce .upsells.products ul.products li.product, .woocommerce-page .related ul li.product, .woocommerce-page .related ul.products li.product, .woocommerce-page .upsells.products ul li.product, .woocommerce-page .upsells.products ul.products li.product{
 	width:20%!important;
+}
+
+/* Hide for now because it's not displaying correctly */
+p.woocommerce-result-count{
+	display:none!important;
+}
+
+.product-meta{
+	display:none!important;
 }

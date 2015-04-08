@@ -42,8 +42,6 @@ function create_post_type() {
   flush_rewrite_rules();
 }
 
-
-
 /*
 function init_artist_custom_fields() {
 	add_post_type_support( 'artist', 'custom-fields' );
@@ -251,3 +249,42 @@ function custom_email_order_meta_fields( $fields, $sent_to_admin, $order ) {
 }
 add_filter('woocommerce_email_order_meta_fields', 'custom_email_order_meta_keys', 10, 3 );
 
+// allow free gifts to be added to cart only if at least one package is present
+function custom_validate_free_gift( $valid, $product_id, $quantity ) {
+	$cart = WC()->cart->get_cart();
+	$freeGiftCategoryId = '16';
+	$packageCategoryId = '18';
+	$packageIsInCart = false;
+    
+	if(!empty($cart)) {
+    	// loop through cart and make sure a package is present
+        foreach($cart as $key=>$value){
+        	$product = $value['data'];
+        	$productId = $product->product_id;
+        	
+        	$terms = get_the_terms($productId, 'product_cat');
+        	if(!empty($terms)) { 
+	        	foreach($terms as $term) {
+	        		$productCategoryId = $term->term_id;
+	        		if($productCategoryId == $packageCategoryId) {
+	        			$packageIsInCart = true;
+	        		}
+        		}
+        	}
+        	else {
+        		$valid = false;
+    			wc_add_notice( 'You must order a package before you can select a free gift.', 'error' );
+        	}
+    	}
+    	if(!$packageIsInCart) {
+    		$valid = false;
+    		wc_add_notice( 'You must order a package before you can select a free gift.', 'error' );
+    	}
+    }
+    else {
+    	$valid = false;
+		wc_add_notice( 'You must order a package before you can select a free gift.', 'error' );
+    }
+    return $valid;
+}
+//add_filter( 'woocommerce_add_to_cart_validation', 'custom_validate_free_gift', 1, 3 );
